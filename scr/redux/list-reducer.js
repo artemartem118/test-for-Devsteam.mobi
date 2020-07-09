@@ -8,7 +8,7 @@ let initialState = {
     isFetching: false
 }
 
-const listReducer = ( state = initialState, action: {} ) => {
+const listReducer = ( state = initialState, action ) => {
     switch ( action.type ) {
         case SET_USERS: {
             return {
