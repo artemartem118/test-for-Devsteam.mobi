@@ -1,27 +1,19 @@
-import 'react-native-gesture-handler'
 import React from 'react'
-import {StyleSheet, Text, View} from 'react-native'
-import {NavigationContainer} from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack'
+
+import Photo from './scr/components/Photo/Photo'
+import ListContainer from './scr/components/List/List-container'
+
+const Stack = createStackNavigator()
 
 const App = () => {
+
     return (
-        <NavigationContainer>
-            <View style={styles.container}>
-                <Text style={styles.text}>awdawd</Text>
-            </View>
-        </NavigationContainer>
+        <Stack.Navigator>
+            <Stack.Screen name='List' component={ ListContainer }/>
+            <Stack.Screen name='Photo' component={ Photo }/>
+        </Stack.Navigator>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    text: {
-        color: 'red'
-    }
-})
 
 export default App
