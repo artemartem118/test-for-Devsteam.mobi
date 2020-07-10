@@ -1,8 +1,8 @@
 import React from 'react'
 import { createStackNavigator } from '@react-navigation/stack'
 
-import Photo from './scr/components/Photo/Photo'
-import ListContainer from './scr/components/List/List-container'
+import Photo from './src/components/Photo/Photo'
+import ListContainer from './src/components/List/List-container'
 
 const Stack = createStackNavigator()
 

@@ -7,7 +7,7 @@ import { NavigationContainer } from '@react-navigation/native'
 
 import { name as appName } from './app.json'
 
-import store from './scr/redux/store'
+import store from './src/redux/store'
 
 import App from './App'
 
